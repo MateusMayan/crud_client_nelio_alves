@@ -1,0 +1,10 @@
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Mateus Brasil Mayan', '819.092.350-16', 3000.0, '1994-12-02', 0);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Lucas Brasil Mayan', '482.380.240-30', 8000.0, '1989-07-01', 0);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Carolina Brasil Mayan', '790.331.950-70', 8000.0, '1985-02-25', 1);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Maria das Graças Brasil Mayan', '557.396.460-73', 8000.0, '1955-03-02', 3);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Emmily Schramm Mayan', '346.349.960-65', 6000.0, '1996-07-12', 0);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Paulo Cesar Castro', '223.516.810-88', 18000.0, '1950-07-31', 10);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Benício Augusto Arthur Assis', '223.516.810-88', 6500.0, '1959-02-11', 0);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Ricardo Pietro Cavalcanti', '223.516.810-88', 4000.0, '1992-03-09', 1);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Carla Flávia Alice Martins', '223.516.810-88', 5000.0, '1988-03-20', 4);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Edson Carlos Sebastião Costa', '565.811.000-99', 3000.0, '2004-12-01', 2);
