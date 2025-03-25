@@ -3,6 +3,7 @@ package com.mayan.crud_clientes.services;
 import com.mayan.crud_clientes.dtos.ClientDTO;
 import com.mayan.crud_clientes.entities.Client;
 import com.mayan.crud_clientes.repositories.ClientRepository;
+import com.mayan.crud_clientes.services.exceptions.DatabaseException;
 import com.mayan.crud_clientes.services.exceptions.ResourceNotFoundException;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,7 +62,7 @@ public class ClientService {
         try {
             repository.deleteById(id);
         } catch (DataIntegrityViolationException e) {
-            throw new ResourceNotFoundException("Falha de integridade referencial.");
+            throw new DatabaseException("Falha de integridade referencial.");
         }
     }
 
