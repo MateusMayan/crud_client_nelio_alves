@@ -4,6 +4,7 @@ import com.mayan.crud_clientes.dtos.ClientDTO;
 import com.mayan.crud_clientes.entities.Client;
 import com.mayan.crud_clientes.repositories.ClientRepository;
 import com.mayan.crud_clientes.services.exceptions.ResourceNotFoundException;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.Page;
@@ -11,7 +12,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.GetMapping;
 
 @Service
 public class ClientService {
@@ -48,7 +48,7 @@ public class ClientService {
             copyDtoToEntity(dto, result);
             result = repository.save(result);
             return new ClientDTO(result);
-        } catch (ResourceNotFoundException e) {
+        } catch (EntityNotFoundException e) {
             throw new ResourceNotFoundException("Cliente não encontrado.");
         }
     }
